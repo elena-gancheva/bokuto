@@ -20,5 +20,10 @@ const config: StorybookConfig = {
       tsconfigPath: path.resolve(__dirname, '../packages/package/tsconfig.json')
     }
   },
+  docs: {
+    autodocs: 'tag',
+    defaultName: 'Overview',
+  },
 };
+
 export default config;

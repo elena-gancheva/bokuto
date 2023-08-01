@@ -1,12 +1,14 @@
 import React, { FC } from 'react';
 import PropTypes from 'prop-types';
-
 import { Button, ButtonProps } from '@progress/kendo-react-buttons';
 
 import '@progress/kendo-theme-default/dist/all.css';
 
 /**
- * Primary UI component for user interaction
+ * To make the Button even more user-friendly and intuitive to use, you can display textual content, predefined icons, images, custom icons, or render a combination of textual and image content within the Button.
+ * The KendoReact Button is distributed through the kendo-react-buttons NPM package
+ * 
+ * The following example demonstrates the Button component in action.
  */
 export const KendoButton: FC<ButtonProps> = (props: ButtonProps) => {
   return (
@@ -14,29 +16,20 @@ export const KendoButton: FC<ButtonProps> = (props: ButtonProps) => {
   );
 }
 
-KendoButton.propTypes = {
-  // children: PropTypes.node,
-  /**
-   * What background color to use
-   */
-  // selected: PropTypes.bool,
-  togglable: PropTypes.bool,
-  icon: PropTypes.string,
-  // svgIcon: svgIconPropType,
-  iconClass: PropTypes.string,
-  imageUrl: PropTypes.string,
-  imageAlt: PropTypes.string,
-  size: PropTypes.oneOf([null, 'small','medium', 'large']),
-  rounded: PropTypes.oneOf([null, 'small', 'medium', 'large', 'full']),
-  fillMode: PropTypes.oneOf([null, 'flat', 'link', 'outline', 'solid']),
-  // eslint-disable-next-line max-len
-  themeColor: PropTypes.oneOf([null, 'base', 'primary', 'secondary', 'tertiary', 'info', 'success', 'warning', 'error', 'dark', 'light', 'inverse'])
-};
-
-
-// ButtonDemo.defaultProps = {
-//   backgroundColor: null,
-//   primary: false,
-//   size: 'medium',
-//   onClick: undefined,
+// KendoButton.propTypes = {
+//   // children: PropTypes.node,
+//   /**
+//    * What background color to use
+//    */
+//   // selected: PropTypes.bool,
+//   togglable: PropTypes.bool,
+//   icon: PropTypes.string,
+//   // svgIcon: svgIconPropType,
+//   iconClass: PropTypes.string,
+//   imageUrl: PropTypes.string,
+//   imageAlt: PropTypes.string,
+//   size: PropTypes.oneOf([null, 'small','medium', 'large']),
+//   rounded: PropTypes.oneOf([null, 'small', 'medium', 'large', 'full']),
+//   fillMode: PropTypes.oneOf([null, 'flat', 'link', 'outline', 'solid']),
+//   themeColor: PropTypes.oneOf([null, 'base', 'primary', 'secondary', 'tertiary', 'info', 'success', 'warning', 'error', 'dark', 'light', 'inverse'])
 // };
