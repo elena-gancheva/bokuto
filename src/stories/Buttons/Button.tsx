@@ -8,7 +8,11 @@ import '@progress/kendo-theme-default/dist/all.css';
 /**
  * Primary UI component for user interaction
  */
-export const KendoButton: FC<ButtonProps> = (props: ButtonProps) => <Button {...props}>Button</Button>;
+export const KendoButton: FC<ButtonProps> = (props: ButtonProps) => {
+  return (
+    <Button {...props}>Button</Button>
+  );
+}
 
 KendoButton.propTypes = {
   // children: PropTypes.node,
