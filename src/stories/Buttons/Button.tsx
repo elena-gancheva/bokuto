@@ -15,7 +15,7 @@ KendoButton.propTypes = {
   /**
    * What background color to use
    */
-  selected: PropTypes.bool,
+  // selected: PropTypes.bool,
   togglable: PropTypes.bool,
   icon: PropTypes.string,
   // svgIcon: svgIconPropType,
