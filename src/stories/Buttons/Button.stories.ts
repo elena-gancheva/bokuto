@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { KendoButton as Button } from './Button';
+import { Button } from './Button';
 
 const meta = {
   title: 'Buttons/Button',

@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { KendoGrid as Grid } from './Grid';
 
 const meta = {
-  title: 'Grid',
+  title: 'Data Grid/Grid',
   component: Grid,
   tags: ['autodocs'],
   parameters: {
