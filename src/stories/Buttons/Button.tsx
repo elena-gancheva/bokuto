@@ -1,5 +1,4 @@
 import React, { FC } from 'react';
-import PropTypes from 'prop-types';
 import { Button as KendoButton, ButtonProps } from '@progress/kendo-react-buttons';
 
 import '@progress/kendo-theme-default/dist/all.css';
@@ -16,20 +15,20 @@ export const Button: FC<ButtonProps> = (props: ButtonProps) => {
   );
 }
 
-Button.propTypes = {
-  // children: PropTypes.node,
-  /**
-   * What background color to use
-   */
-  // selected: PropTypes.bool,
-  togglable: PropTypes.bool,
-  icon: PropTypes.string,
-  // svgIcon: svgIconPropType,
-  iconClass: PropTypes.string,
-  imageUrl: PropTypes.string,
-  imageAlt: PropTypes.string,
-  size: PropTypes.oneOf([null, 'small','medium', 'large']),
-  rounded: PropTypes.oneOf([null, 'small', 'medium', 'large', 'full']),
-  fillMode: PropTypes.oneOf([null, 'flat', 'link', 'outline', 'solid']),
-  themeColor: PropTypes.oneOf([null, 'base', 'primary', 'secondary', 'tertiary', 'info', 'success', 'warning', 'error', 'dark', 'light', 'inverse'])
-};
+// Button.propTypes = {
+//   // children: PropTypes.node,
+//   /**
+//    * What background color to use
+//    */
+//   // selected: PropTypes.bool,
+//   togglable: PropTypes.bool,
+//   icon: PropTypes.string,
+//   // svgIcon: svgIconPropType,
+//   iconClass: PropTypes.string,
+//   imageUrl: PropTypes.string,
+//   imageAlt: PropTypes.string,
+//   size: PropTypes.oneOf([null, 'small','medium', 'large']),
+//   rounded: PropTypes.oneOf([null, 'small', 'medium', 'large', 'full']),
+//   fillMode: PropTypes.oneOf([null, 'flat', 'link', 'outline', 'solid']),
+//   themeColor: PropTypes.oneOf([null, 'base', 'primary', 'secondary', 'tertiary', 'info', 'success', 'warning', 'error', 'dark', 'light', 'inverse'])
+// };

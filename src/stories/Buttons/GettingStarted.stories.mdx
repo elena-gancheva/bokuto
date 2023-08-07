@@ -1,0 +1,132 @@
+import { Meta, Canvas, Story } from '@storybook/blocks';
+import { ButtonExample } from './GettingStartedButtons';
+
+
+<Meta title="Buttons/Getting Started" />
+
+
+
+# Getting Started with the KendoReact Buttons
+
+#### This guide provides essential information about using the KendoReact Buttons package&mdash;you will learn how to install the Buttons package, add a Button component to your project, style the component, and activate your license.
+
+After completing this guide, you will be able to reproduce the following example.
+
+
+## Setting Up Your React Project
+
+Before you install the KendoReact Buttons, make sure that you have a running React project. The easiest way to set up a React project is to use the [Create React App](https://github.com/facebook/create-react-app) approach that is described in the [Get Started with KendoReact] article.
+
+
+
+
+## Installing the Components
+
+
+All KendoReact packages are distributed through npm and offer a similar installation experience. To use any of the components in the Buttons package, start with the installation of the npm package and its [dependencies](#toc-dependencies). Use Node.js v5.0.0 or later.
+
+```sh
+npm install --save @progress/kendo-react-buttons @progress/kendo-svg-icons @progress/kendo-licensing
+```
+
+
+
+## Importing the Component
+
+After installing the Buttons npm package, import the desired components in the React App. This guide shows how to add the Button.
+
+In the App component file of your React project (for example, `src/App.js`), add the following code:
+
+```jsx-no-run
+// ES2015 module syntax
+import { Button } from '@progress/kendo-react-buttons';
+```
+```jsx-no-run
+// CommonJS format
+const { Button } = require('@progress/kendo-react-buttons');
+```
+
+If your project requires more components from the Buttons package, you can import them too. The package provides the following components:
+
+* Button
+* ButtonGroup
+* Chip
+* ChipList
+* DropDownButton
+* FloatingActionButton
+* Toolbar
+* SplitButton
+
+
+
+
+## Using the Component
+
+1. After installing the Buttons package and importing the components, add the Button tags to the App component file of your React project (for example, `src/App.js`).
+
+   ```jsx-no-run
+   <Button>My Button</Button>
+   ```
+
+1. Optionally, handle the `onClick` event by adding a `ButtonContainer` and then defining the action that occurs when the Button generates the `onClick` event.
+
+   ```jsx-no-run
+   const ButtonContainer = () => {
+      const handleButtonClick = () => {
+         console.log("click");
+         alert("KendoReact Button was clicked.");
+      }
+         return (
+            <div>
+               <Button onClick={handleButtonClick}>
+               My Button
+               </Button>
+            </div>
+         );
+   }
+   ReactDOM.render(
+   <ButtonContainer />,
+      document.querySelector('my-app')
+   );
+   ```
+
+1. To style the Button, install and import the [Default theme](https://www.telerik.com/kendo-react-ui/components/styling/theme-default/), which is one of the [three beautiful themes](https://www.telerik.com/kendo-react-ui/components/styling/) for KendoReact.
+
+   2.1. Install the Default theme package.
+
+      ```sh
+      npm install --save @progress/kendo-theme-default
+      ```
+
+   2.2. Import the CSS file from the package in `src/App.js`. Add this import before your existing `App.css` import.
+
+      ```jsx-no-run
+      import '@progress/kendo-theme-default/dist/all.css';
+      ```
+
+1. Build and run the application by typing the following command in the root folder of your project:
+
+   ```sh
+   npm start
+   ```
+
+
+
+## Activating Your License Key
+
+Using any of the UI components in the KendoReact library requires either a commercial license key or an active trial license key.
+
+Follow the instructions on the KendoReact [My License page](https://www.telerik.com/kendo-react-ui/components/my-license/) to activate your trial or commercial license. You can skip this step if your application already contains a KendoReact license file.
+
+
+
+## Dependencies
+
+The Buttons package requires you to install the following [peer dependencies](https://nodejs.org/en/blog/npm/peer-dependencies/) in your application:
+
+| Package Name | Description |
+|--------------|-------------|
+| react 16.8.2* | Contains the functionality necessary to define React components. |
+| react-dom | Contains the React renderer for the web.|
+| @progress/kendo-licensing | Contains the internal infrastructure related to licensing. |
+| @progress/kendo-svg-icons | Contains the KendoReact SVG icons. |

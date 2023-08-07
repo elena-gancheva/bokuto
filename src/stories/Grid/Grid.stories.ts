@@ -14,4 +14,9 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const BasicGrid: Story = {};
+export const BasicGrid: Story = {
+  args: {
+    pageable: true,
+    filterable: true
+  }
+};

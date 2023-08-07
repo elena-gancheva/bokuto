@@ -17,6 +17,7 @@ export const KendoGrid: React.FC<GridProps> = (props: GridProps) => {
         height: "400px",
       }}
       data={products}
+      {...props}
     >
       <GridColumn field="ProductID" title="ID" width="40px" />
       <GridColumn field="ProductName" title="Name" width="250px" />

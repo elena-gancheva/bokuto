@@ -25,7 +25,7 @@ export const Appearance: Story = {
     fillMode: 'solid',
     themeColor: 'primary',
     rounded: 'small'
-  },
+  }
 };
 
 /**
@@ -60,5 +60,5 @@ export const IconButton: Story = {
 export const ToggleableButton: Story = {
   args: {
     togglable: true
-  }
+  },
 };
